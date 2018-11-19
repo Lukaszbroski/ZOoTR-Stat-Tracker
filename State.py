@@ -46,7 +46,7 @@ class State(object):
         self.item_table.append(Item('Storms', False,  -1))
         self.item_table.append(Item('Minuet', False,  -1))
         self.item_table.append(Item('Bolero', False,  -1))
-        self.item_table.append(Item('Requim', False,  -1))
+        self.item_table.append(Item('Reqiuem', False,  -1))
         self.item_table.append(Item('Emerald', False,  -1))
         self.item_table.append(Item('Ruby', False,  -1))
         self.item_table.append(Item('Sapphire', False,  -1))

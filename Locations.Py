@@ -86,65 +86,242 @@ class Location(object):
 class Location_List:
     def __init__(self):
         self.location_table = []
-        self.location_table.append(Location('Links Pocket','accessible','',''))
-        self.location_table.append(Location('Morpha','accessible','Hookshot-2,Iron Boots,Boss Key Water Temple','-1'))
-        self.location_table.append(Location('Twinrova','accessible','Mirror Shield,Hookshot,Boss Key Spirit Temple,Small Key Spirit Temple-4,Strength-2,Bombs/Bombchus','Small Key Spirit Temple-5,Mirror Shield,Hookshot,Boss Key Spirit Temple,Strength-2,Bombs'))
-        self.location_table.append(Location('Bongo Bongo','accessible','Hookshot,Hookshot-2+Ocarina/Bow/Bombchus,Boss Key Shadow Temple,Small Key Shadow Temple-5','Hookshot,Boss Key Shadow Temple,Small Key Shadow Temple-5,Lens,Magic,Bow/Hookshot-2+Ocarina'))
-        self.location_table.append(Location('Barinade','accessible','Boomerang,Ruto,Bottle,Scale/bombs,', 'Boomerang,Ruto,Bottle,Scale/bombs,Lullaby'))
-        self.location_table.append(Location('Phantom Ganon','accessible','Bow,Hookshot,Boss Key Forest Temple,Small Key Forest Temple-6','-1'))
-        self.location_table.append(Location('Volvagia','accessible','Hammer,Boss Key Fire Temple','Hammer,Boss Key Fire Temple,Hover Boots/Small Key Fire Temple-7,Goron Tunic'))
-        self.location_table.append(Location('Queen Gohma','accessible','','Slingshot'))
-        self.location_table.append(Location('King Dodongo','accessible','Bombchus+Strength_Hammer+Strength+Adult_Bombs','Bombs'))
-        self.location_table.append(Location('Song from Saria','accessible','Weird Egg,Hyrule Entry','-1'))
-        self.location_table.append(Location('Song from Ocarina of Time','accessible','Emerald,Sapphire,Ruby','-1'))
-        self.location_table.append(Location('Sheik at Colossus','accessible','Hookshot,Adult_Requim','Requim_Hookshot-2/Epona,Hookshot-2/Hover Boots,Lens'))
-        self.location_table.append(Location('Sheik at Temple','accessible','Forest Medallion,Adult','-1'))
-        self.location_table.append(Location('Impa at Castle','accessible','Weird Egg,Hyrule Entry','-1'))
-        self.location_table.append(Location('Sheik in Kakariko','accessible','Water Medallion,Forest Medallion,Fire Medallion,Adult','-1'))
-        self.location_table.append(Location('Song at Windmill','accessible','Adult','-1'))
-        self.location_table.append(Location('Song from Composer Grave','accessible','Lullaby,Hyrule Entry','-1'))
-        self.location_table.append(Location('Sheik in Crater','accessible','Adult,Hookshot+Bombchu/Hookshot-2+Ocarina:Hover Boots_Hookshot+Bombs/Bow_Bolero','Adult,Hookshot,Bombs/Bow_Adult,Hookshot-2,Ocarina_Adult,Hover Boots_Bolero,Adult'))
-        self.location_table.append(Location('Sheik in Ice Cavern','accessible','Adult,Ruto,Bottle,Hover Boots/Lullaby','Lullaby,Adult,Ruto,Bottle'))
-        self.location_table.append(Location('Song from Malon', 'accessible','Hyrule Entry,Weird egg,Ocarina','-1'))
-        self.location_table.append(Location('Sheik Forest Song','accessible','Adult','Adult,Saria/Minuet'))
-        self.location_table.append(Location('Kokiri Sword Chest','accessible','',''))
-        self.location_table.append(Location('Mido Chest Top Left','accessible','',''))
-        self.location_table.append(Location('Mido Chest Top Right','accessible','',''))
-        self.location_table.append(Location('Mido Chest Bottom Left','accessible','',''))
-        self.location_table.append(Location('Mido Chest Bottom Right','accessible','',''))
-        self.location_table.append(Location('Skull Kid','accessible','Ocarina,Saria','-1'))
-        self.location_table.append(Location('Ocarina Memory Game','accessible','Ocarina','-1'))
-        self.location_table.append(Location('Target in Woods','accessible','Slingshot','-1'))
-        self.location_table.append(Location('LW Deku Scrub Deku Stick Upgrade','accessible','',''))
-        self.location_table.append(Location('Underwater Bottle','accessible','Scale','-1'))
-        self.location_table.append(Location('Lake Hylia Sun','accessible','Adult,Bow,Water Medallion/Hookshot-2+Ocarina', '-1'))
-        self.location_table.append(Location('Lake Hylia Freestanding PoH','accessible','Adult,Hookshot+Ocarina/Bomb','-1'))
-        self.location_table.append(Location('Diving in the Lab','accessible','Adult+Iron Boots+Hookshot/Scale-2','Scale-2'))
-        self.location_table.append(Location('Child Fishing','accessible','Kokiri Sword,Hyrule Entry','-1'))
-        self.location_table.append(Location('Adult Fishing','accessible','Adult','-1'))
-        self.location_table.append(Location('Water Temple Map Chest','accessible','Adult,Hookshot-2+Scale-2/Hookshot+Iron Boots','Adult,Hookshot,Iron Boots'))
-        self.location_table.append(Location('Water Temple Compass Chest','accessible','Adult,Hookshot+Iron Boots/Hookshot-2+Scale-2','Adult,Hookshot+Iron Boots'))
-        self.location_table.append(Location('Water Temple Torches Chest','accessible','Adult,Ocarina,Lullaby,Hookshot+Iron Boots/Hookshot-2+Scale-2','Adult,Hookshot+Iron Boots,Ocarina,Lullaby'))
-        self.location_table.append(Location('Water Temple Dragon Chest','accessible','Adult,Hookshot+Iron Boots/Hookshot-2+Scale-2,Ocarina,Lullaby/Time+Bow+Water Temple Small Key-2','Adult,Hookshot,Iron Boots,Ocarina,Lullaby+Strength/Water Temple Small Key-6+Time+Lullaby+Bow'))
-        self.location_table.append(Location('Water Temple Central Bow Target Chest','accessible','Adult,Hookshot+Iron Boots+Hover Boots/Hookshot-2+Scale-2/Hookshot-2+Iron Boots,Ocarina,Lullaby,Bow,Strength','Adult,Hookshot-2/Hover Boots,Hookshot,Bow,Lullaby,Ocarina,Iron Boots,Strength'))
-        self.location_table.append(Location('Water Temple Boss Key Chest','accessible','Adult,Hookshot,Iron Boots/Scale-2+Ocarina+Lullaby+Hookshot-2,Hookshot-2/Hover Boots,Water Temple Small Key-2','Adult,Hookshot-2,Strength+Bombs/Hover Boots,Lullaby,Ocarina,Iron Boots,Water Temple Small Key-6'))
-        self.location_table.append(Location('Morpha Heart','accessible','Adult,Hookshot-2,Iron Boots/Scale-2,Water Temple Boss Key','Iron Boots, Adult, Water Temple Boss Key,Longshot'))
-        self.location_table.append(Location('Water Temple Central Pillar Chest','Adult,Iron Boots,Hookshot,Ocarina,Lullaby,Water Temple Small Key,Zora Tunic','Adult,Iron Boots,Hookshot,Bow/Dins/Water Temple Small Key-5,Ocarina,Lullaby'))
-        self.location_table.append(Location('Water Temple Cracked Wall Chest'
-        Water Temple Dark Link Chest
-        Water Temple River Chest
-        Gerudo Valley Waterfall Freestanding PoH
-        Gerudo Valley Crate Freestanding PoH
-        Gerudo Valley Hammer Rocks Chest
-        Gerudo Fortress Rooftop Chest
-        Horseback Archery 1000 Points
-        Horseback Archery 1500 Points
-        Haunted Wasteland Structure Chest
-        Colossus Freestanding PoH
-        Desert Colossus Fairy Reward
-        Gerudo Training Grounds Lobby Left Chest
-        Gerudo Training Grounds Lobby Right Chest
-        Gerudo Training Grounds Stalfos Chest
+        self.location_table.append(Location('Links Pocket',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Morpha',
+                                            'accessible',
+                                            'Hookshot-2,Iron Boots,Boss Key Water Temple',
+                                            '-1'))
+        self.location_table.append(Location('Twinrova',
+                                            'accessible',
+                                            'Mirror Shield,Hookshot,Boss Key Spirit Temple,Small Key Spirit Temple-4,Strength-2,Bombs/Bombchus',
+                                            'Small Key Spirit Temple-5,Mirror Shield,Hookshot,Boss Key Spirit Temple,Strength-2,Bombs'))
+        self.location_table.append(Location('Bongo Bongo',
+                                            'accessible',
+                                            'Hookshot,Hookshot-2+Ocarina/Bow/Bombchus,Boss Key Shadow Temple,Small Key Shadow Temple-5',
+                                            'Hookshot,Boss Key Shadow Temple,Small Key Shadow Temple-5,Lens,Magic,Bow/Hookshot-2+Ocarina'))
+        self.location_table.append(Location('Barinade',
+                                            'accessible',
+                                            'Boomerang,Ruto,Bottle,Scale/bombs,',
+                                            'Boomerang,Ruto,Bottle,Scale/bombs,Lullaby'))
+        self.location_table.append(Location('Phantom Ganon',
+                                            'accessible',
+                                            'Bow,Hookshot,Boss Key Forest Temple,Small Key Forest Temple-6',
+                                            '-1'))
+        self.location_table.append(Location('Volvagia',
+                                            'accessible',
+                                            'Hammer,Boss Key Fire Temple',
+                                            'Hammer,Boss Key Fire Temple,Hover Boots/Small Key Fire Temple-7,Goron Tunic'))
+        self.location_table.append(Location('Queen Gohma',
+                                            'accessible',
+                                            '',
+                                            'Slingshot'))
+        self.location_table.append(Location('King Dodongo',
+                                            'accessible',
+                                            'Bombchus+Strength_Hammer+Strength+Adult_Bombs',
+                                            'Bombs'))
+        self.location_table.append(Location('Song from Saria',
+                                            'accessible',
+                                            'Weird Egg,Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Song from Ocarina of Time',
+                                            'accessible',
+                                            'Emerald,Sapphire,Ruby',
+                                            '-1'))
+        self.location_table.append(Location('Sheik at Colossus',
+                                            'accessible',
+                                            'Hookshot,Adult_Requiem',
+                                            'Requiem_Hookshot-2/Epona,Hookshot-2/Hover Boots,Lens'))
+        self.location_table.append(Location('Sheik at Temple',
+                                            'accessible',
+                                            'Forest Medallion,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Impa at Castle',
+                                            'accessible',
+                                            'Weird Egg,Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Sheik in Kakariko',
+                                            'accessible',
+                                            'Water Medallion,Forest Medallion,Fire Medallion,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Song at Windmill',
+                                            'accessible',
+                                            'Adult',
+                                            '-1'))
+        self.location_table.append(Location('Song from Composer Grave',
+                                            'accessible',
+                                            'Lullaby,Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Sheik in Crater',
+                                            'accessible',
+                                            'Adult,Hookshot+Bombchu/Hookshot-2+Ocarina:Hover Boots_Hookshot+Bombs/Bow_Bolero',
+                                            'Adult,Hookshot,Bombs/Bow_Adult,Hookshot-2,Ocarina_Adult,Hover Boots_Bolero,Adult'))
+        self.location_table.append(Location('Sheik in Ice Cavern',
+                                            'accessible',
+                                            'Adult,Ruto,Bottle,Hover Boots/Lullaby',
+                                            'Lullaby,Adult,Ruto,Bottle'))
+        self.location_table.append(Location('Song from Malon',
+                                            'accessible',
+                                            'Hyrule Entry,Weird egg,Ocarina',
+                                            '-1'))
+        self.location_table.append(Location('Sheik Forest Song',
+                                            'accessible',
+                                            'Adult',
+                                            'Adult,Saria/Minuet'))
+        self.location_table.append(Location('Kokiri Sword Chest',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Mido Chest Top Left',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Mido Chest Top Right',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Mido Chest Bottom Left',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Mido Chest Bottom Right',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Skull Kid',
+                                            'accessible',
+                                            'Ocarina,Saria',
+                                            '-1'))
+        self.location_table.append(Location('Ocarina Memory Game',
+                                            'accessible',
+                                            'Ocarina',
+                                            '-1'))
+        self.location_table.append(Location('Target in Woods',
+                                            'accessible',
+                                            'Slingshot',
+                                            '-1'))
+        self.location_table.append(Location('LW Deku Scrub Deku Stick Upgrade',
+                                            'accessible',
+                                            '',
+                                            ''))
+        self.location_table.append(Location('Underwater Bottle',
+                                            'accessible',
+                                            'Scale',
+                                            '-1'))
+        self.location_table.append(Location('Lake Hylia Sun',
+                                            'accessible',
+                                            'Adult,Bow,Water Medallion/Hookshot-2+Ocarina',
+                                            '-1'))
+        self.location_table.append(Location('Lake Hylia Freestanding PoH',
+                                            'accessible',
+                                            'Adult,Hookshot+Ocarina/Bomb',
+                                            '-1'))
+        self.location_table.append(Location('Diving in the Lab',
+                                            'accessible',
+                                            'Adult+Iron Boots+Hookshot/Scale-2',
+                                            'Scale-2'))
+        self.location_table.append(Location('Child Fishing',
+                                            'accessible',
+                                            'Kokiri Sword,Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Adult Fishing',
+                                            'accessible',
+                                            'Adult',
+                                            '-1'))
+        self.location_table.append(Location('Water Temple Map Chest',
+                                            'accessible',
+                                            'Adult,Hookshot-2+Scale-2/Hookshot+Iron Boots',
+                                            'Adult,Hookshot,Iron Boots'))
+        self.location_table.append(Location('Water Temple Compass Chest',
+                                            'accessible',
+                                            'Adult,Hookshot+Iron Boots/Hookshot-2+Scale-2',
+                                            'Adult,Hookshot+Iron Boots'))
+        self.location_table.append(Location('Water Temple Torches Chest',
+                                            'accessible',
+                                            'Adult,Ocarina,Lullaby,Hookshot+Iron Boots/Hookshot-2+Scale-2',
+                                            'Adult,Hookshot+Iron Boots,Ocarina,Lullaby'))
+        self.location_table.append(Location('Water Temple Dragon Chest',
+                                            'accessible',
+                                            'Adult,Hookshot+Iron Boots/Hookshot-2+Scale-2,Ocarina,Lullaby/Time+Bow+Water Temple Small Key-2',
+                                            'Adult,Hookshot,Iron Boots,Ocarina,Lullaby+Strength/Water Temple Small Key-6+Time+Lullaby+Bow'))
+        self.location_table.append(Location('Water Temple Central Bow Target Chest',
+                                            'accessible',
+                                            'Adult,Hookshot+Iron Boots+Hover Boots/Hookshot-2+Scale-2/Hookshot-2+Iron Boots,Ocarina,Lullaby,Bow,Strength',
+                                            'Adult,Hookshot-2/Hover Boots,Hookshot,Bow,Lullaby,Ocarina,Iron Boots,Strength'))
+        self.location_table.append(Location('Water Temple Boss Key Chest',
+                                            'accessible',
+                                            'Adult,Hookshot,Iron Boots/Scale-2+Ocarina+Lullaby+Hookshot-2,Hookshot-2/Hover Boots,Water Temple Small Key-2',
+                                            'Adult,Hookshot-2,Strength+Bombs/Hover Boots,Lullaby,Ocarina,Iron Boots,Water Temple Small Key-6'))
+        self.location_table.append(Location('Morpha Heart',
+                                            'accessible',
+                                            'Adult,Hookshot-2,Iron Boots/Scale-2,Water Temple Boss Key',
+                                            'Iron Boots, Adult, Water Temple Boss Key,Longshot'))
+        self.location_table.append(Location('Water Temple Central Pillar Chest',
+                                            'accessible',
+                                            'Adult,Iron Boots,Hookshot,Ocarina,Lullaby,Water Temple Small Key,Zora Tunic',
+                                            'Adult,Iron Boots,Hookshot,Bow/Dins/Water Temple Small Key-5,Ocarina,Lullaby'))
+        self.location_table.append(Location('Water Temple Cracked Wall Chest',
+                                            'accessible',
+                                            'Adult,Hookshot,Iron Boots/Scale-2+Hookshot-2,Ocarina,Lullaby,Bombs/Bombchus',
+                                            'Adult,Iron Boots,Hookshot,Ocarina,Lullaby,Bow/Dins/Water Temple Small Key-5,Bombs'))
+        self.location_table.append(Location('Water Temple Dark Link Chest',
+                                            'accessible',
+                                            'Adult,Hookshot,Iron Boots/Scale-2,Water Temple Small Key-2',
+                                            'Adult,Hookshot,Water Temple Small Key-6'))
+        self.location_table.append(Location('Water Temple River Chest',
+                                            'accessible',
+                                            'Adult,Hookshot,Iron Boots/Scale-2,Water Temple Small Key-2,Bow,Time,Ocarina',
+                                            'Adult,Hookshot,Iron Boots,Water Temple Small Key-6,Lullaby,Ocarina,Time,Bow'))
+        self.location_table.append(Location('Gerudo Valley Waterfall Freestanding PoH',
+                                            'accessible',
+                                            'Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Gerudo Valley Crate Freestanding PoH',
+                                            'accessible',
+                                            'Hyrule Entry',
+                                            '-1'))
+        self.location_table.append(Location('Gerudo Valley Hammer Rocks Chest'
+                                            'accessible',
+                                            'Hammer,Requiem/Epona+Ocarina/Hookshot/GTG Entry,Adult',
+                                            'Hammer,Epona+Ocarina/Hookshot-2/GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Fortress Rooftop Chest',
+                                            'accessible',
+                                            'Hookshot+Ocarina/Hover Boots/Hookshot-2,Requiem/Epona+Ocarina/Hookshot/GTG Entry,Adult',
+                                            'Hover Boots/Hookshot+Ocarina/Hookshot-2,Hookshot-2/Epona+Ocarina/GTG Entry, Adult'))
+        self.location_table.append(Location('Horseback Archery 1000 Points',
+                                            'accessible',
+                                            'GTG Entry,Epona,Ocarina,Bow,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Horseback Archery 1500 Points',
+                                            'accessible',
+                                            'GTG Entry,Epona,Ocarina,Bow,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Haunted Wasteland Structure Chest',
+                                            'accessible',
+                                            'GTG Entry/Requiem+Ocarina,Magic,Fire Arrows+Bow/Dins',
+                                            'GTG Entry,Magic,Fire Arrows+Bow/Dins'))
+        self.location_table.append(Location('Colossus Freestanding PoH',
+                                            'accessible',
+                                            'Bombs/Bombchus/Scale,Reqiuem,Ocarina,Adult',
+                                            'Bombs/Scale,Requiem,Adult,Ocarina'))
+        self.location_table.append(Location('Desert Colossus Fairy Reward',
+                                            'accessible',
+                                            'Bombs/Bombchus,Ocarina,Lullaby,Requiem/GTG Entry',
+                                            'Bombs,Ocarina,Lullaby,GTG Entry/Requiem'))
+        self.location_table.append(Location('Gerudo Training Grounds Lobby Left Chest',
+                                            'accessible',
+                                            'GTG Entry,Bow,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Gerudo Training Grounds Lobby Right Chest',
+                                            'accessible',
+                                            'GTG Entry,Bow,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Gerudo Training Grounds Stalfos Chest',
+                                            'accessible',
+                                            'GTG Entry,Adult'
+                                            '-1'))
         Gerudo Training Grounds Beamos Chest
         Gerudo Training Grounds Hidden Ceiling Chest
         Gerudo Training Grounds Maze Path First Chest
