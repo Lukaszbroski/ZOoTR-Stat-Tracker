@@ -322,28 +322,94 @@ class Location_List:
                                             'accessible',
                                             'GTG Entry,Adult'
                                             '-1'))
-        Gerudo Training Grounds Beamos Chest
-        Gerudo Training Grounds Hidden Ceiling Chest
-        Gerudo Training Grounds Maze Path First Chest
-        Gerudo Training Grounds Maze Path Second Chest
-        Gerudo Training Grounds Maze Path Third Chest
-        Gerudo Training Grounds Maze Path Final Chest
-        Gerudo Training Grounds Maze Right Central Chest
-        Gerudo Training Grounds Maze Right Side Chest
-        Gerudo Training Grounds Freestanding Key
-        Gerudo Training Grounds Underwater Silver Rupee Chest
-        Gerudo Training Grounds Hammer Room Clear Chest
-        Gerudo Training Grounds Hammer Room Switch Chest
-        Gerudo Training Grounds Eye Statue Chest
-        Gerudo Training Grounds Near Scarecrow Chest
-        Gerudo Training Grounds Before Heavy Block Chest
-        Gerudo Training Grounds Heavy Block First Chest
-        Gerudo Training Grounds Heavy Block Second Chest
-        Gerudo Training Grounds Heavy Block Third Chest
-        Gerudo Training Grounds Heavy Block Fourth Chest
-        Spirit Temple Child Left Chest
-        Spirit Temple Child Right Chest
-        Spirit Temple Child Climb East Chest
+        self.location_table.append(Location('Gerudo Training Grounds Beamos Chest',
+                                            'accessible',
+                                            'GTG Entry,Adult,Bombs/Bombchus',
+                                            'GTG Entry,Adult,Bombs'))
+        self.location_table.append(Location('Gerudo Training Grounds Hidden Ceiling Chest',
+                                            'accessible',
+                                            'GTG Key-1,GTG Entry,Adult',
+                                            'GTG Key-3,Lens,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Path First Chest',
+                                            'accessible',
+                                            'GTG Key-2,GTG Entry,Adult',
+                                            'GTG Key-4,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Path Second Chest',
+                                            'accessible',
+                                            'GTG Key-4,GTG Entry,Adult',
+                                            'GTG Key-6,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Path Third Chest',
+                                            'accessible',
+                                            'GTG Key-5,GTG Entry,Adult',
+                                            'GTG Key-7,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Path Final Chest'
+                                            'accessible',
+                                            'GTG Key-7,GTG Entry,Adult',
+                                            'GTG Key-9,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Right Central Chest',
+                                            'accessible',
+                                            'GTG Key-2/Bombs+Time+Ocarina/Bombchus+Time+Ocarina/Hookshot+Ocarina+Time,GTG Entry,Adult',
+                                            'GTG Key-9/Bombs+Time+Ocarina,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Maze Right Side Chest',
+                                            'accessible',
+                                            'GTG Key-2/Bombs+Time+Ocarina/Bombchus+Time+Ocarina/Hookshot+Time+Ocarina,GTG Entry,Adult',
+                                            'GTG Key-9/Bombs+Time+Ocarina,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Freestanding Key',
+                                            'accessible',
+                                            'GTG Key-2/Bombs+Time+Ocarina/Bombchus+Time+Ocarina/Hookshot,GTG Entry,Adult',
+                                            'GTG Key-9/Bombs+Time,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Underwater Silver Rupee Chest',
+                                            'accessible',
+                                            'Hookshot,Ocarina,Time,Iron Boots,GTG Entry,Adult',
+                                            'Hookshot,Ocarina,Time,Iron Boots,Bombs/GTG Key-9/Lens,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Hammer Room Clear Chest',
+                                            'accessible',
+                                            'Hookshot,GTG Entry,Adult',
+                                            'Hookshot,Bombs/Lens/GTG Key-9,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Hammer Room Switch Chest',
+                                            'accessible',
+                                            'Hookshot,GTG Entry,Adult',
+                                            'Hookshot,Hammer,Bombs/Lens/GTG Key-9,GTG Entry,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Eye Statue Chest',
+                                            'accessible',
+                                            'Hookshot,GTG Entry,Bow,Adult',
+                                            'Hookshot,Bow,Lens/Hammer,GTG Entry,GTG Key-9,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Near Scarecrow Chest',
+                                            'accessible'
+                                            'Hookshot,Bow,GTG Entry,Adult',
+                                            'Hookshot,Bow,GTG Entry,Lens,GTG Key-9,Adult'))
+        self.location_table.append(Location('Gerudo Training Grounds Before Heavy Block Chest',
+                                            'accessible',
+                                            'Hookshot,GTG Entry,Adult',
+                                            '-1'))
+        self.location_table.append(Location('Gerudo Training Grounds Heavy Block First Chest',
+                                            'accessible',
+                                            'Hookshot,Strength-2,Adult,GTG Entry',
+                                            'Hookshot,Strength-2,Adult,GTG Entry,Lens'))
+        self.location_table.append(Location('Gerudo Training Grounds Heavy Block Second Chest',
+                                            'accessible',
+                                            'Hookshot,Strength-2,Adult,GTG Entry',
+                                            'Hookshot,Strength-2,Adult,GTG Entry,Lens'))
+        self.location_table.append(Location('Gerudo Training Grounds Heavy Block Third Chest',
+                                            'accessible',
+                                            'Hookshot,Strength-2,Adult,GTG Entry',
+                                            'Hookshot,Strength-2,Adult,GTG Entry,Lens'))
+        self.location_table.append(Location('Gerudo Training Grounds Heavy Block Fourth Chest',
+                                            'accessible',
+                                            'Hookshot,Strength-2,Adult,GTG Entry',
+                                            'Hookshot,Strength-2,Adult,GTG Entry,Lens'))
+        self.location_table.append(Location('Spirit Temple Child Left Chest',
+                                            'accessible',
+                                            'Requiem,Ocarina,Boomerang/Slingshot/Bombchus',
+                                            'Requiem,Ocarina,Boomerang/Slingshot'))
+        self.location_table.append(Location('Spirit Temple Child Right Chest',
+                                            'accessible',
+                                            'Requiem,Ocarina,Boomerang/Slingshot/Bombchus',
+                                            'Requiem,Ocarina,Boomerang/Slingshot'))
+        self.location_table.append(Location('Spirit Temple Child Climb East Chest',
+                                            'accessible',
+                                            'Adult,Strength-2,Requiem+Ocarina/GTG Entry,Spirit Temple Small Key,Bombs/Bombchus/Hookshot/Bow_Requiem,Ocarina,Spirit Temple Small Key,Slingshot/Boomerang/Bombs/Bombchus',
+                                            'Adult,Requiem+Ocarina/GTG Entry+Hover Boots/Hookshot-2+Lens' EDIT THIS
         Spirit Temple Child Climb North Chest
         Spirit Temple Compass Chest
         Spirit Temple Early Adult Right Chest
