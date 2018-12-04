@@ -92,28 +92,28 @@ class Location_List:
                                             ''))
         self.location_table.append(Location('Morpha',
                                             'accessible',
-                                            'Hookshot-2,Iron Boots,Boss Key Water Temple',
+                                            'Adult,Hookshot-2,Iron Boots,Boss Key Water Temple',
                                             '-1'))
         self.location_table.append(Location('Twinrova',
                                             'accessible',
-                                            'Mirror Shield,Hookshot,Boss Key Spirit Temple,Small Key Spirit Temple-4,Strength-2,Bombs/Bombchus',
-                                            'Small Key Spirit Temple-5,Mirror Shield,Hookshot,Boss Key Spirit Temple,Strength-2,Bombs'))
+                                            'Adult,Mirror,Hookshot,Boss Key Spirit Temple,Small Key Spirit Temple-4,Strength-2,Bombs/Bombchus,Requiem+Ocarina/GTG Entry',
+                                            'Adult,Small Key Spirit Temple-5,Mirror,Hookshot,Boss Key Spirit Temple,Strength-2,Bombs/Bombchus,Requiem+Ocarina/GTG Entry+Hover Boots+Lens/GTG Entry+Hookshot-2+Lens'))
         self.location_table.append(Location('Bongo Bongo',
                                             'accessible',
-                                            'Hookshot,Hookshot-2+Ocarina/Bow/Bombchus,Boss Key Shadow Temple,Small Key Shadow Temple-5',
-                                            'Hookshot,Boss Key Shadow Temple,Small Key Shadow Temple-5,Lens,Magic,Bow/Hookshot-2+Ocarina'))
+                                            'Adult,Hookshot,Hookshot-2+Ocarina/Bow/Bombchus,Boss Key Shadow Temple,Small Key Shadow Temple-5,Hover Boots,Bombs/Bombchus',
+                                            'Adult,Hookshot,Boss Key Shadow Temple,Small Key Shadow Temple-5,Lens,Magic,Ocarina,Lullaby,Bombs/Bombchus,Bow/Hookshot-2,Hover Boots'))
         self.location_table.append(Location('Barinade',
                                             'accessible',
-                                            'Boomerang,Ruto,Bottle,Scale/bombs,',
-                                            'Boomerang,Ruto,Bottle,Scale/bombs,Lullaby'))
+                                            'Boomerang,Ruto,Bottle,Scale/Bombs/Bombchus,',
+                                            'Boomerang,Ruto,Bottle,Scale/Bombs+Ocarina+Lullaby/Bombchus+Ocarina+Lullaby,'))
         self.location_table.append(Location('Phantom Ganon',
                                             'accessible',
-                                            'Bow,Hookshot,Boss Key Forest Temple,Small Key Forest Temple-6',
-                                            '-1'))
+                                            'Adult,Bow,Hookshot,Boss Key Forest Temple,Small Key Forest Temple-5',
+                                            'Adult,Bow,Hookshot,Boss Key Forest Temple,Small Key Forest Temple-5,Saria/Minuet,Ocarina'))
         self.location_table.append(Location('Volvagia',
                                             'accessible',
-                                            'Hammer,Boss Key Fire Temple',
-                                            'Hammer,Boss Key Fire Temple,Hover Boots/Small Key Fire Temple-7,Goron Tunic'))
+                                            'Adult,Hammer,Boss Key Fire Temple',
+                                            'Adult,Hammer,Boss Key Fire Temple,Hover Boots/Small Key Fire Temple-7,Goron Tunic,Time+Ocarina/Bombs/Bombchus'))
         self.location_table.append(Location('Queen Gohma',
                                             'accessible',
                                             '',
@@ -121,10 +121,10 @@ class Location_List:
         self.location_table.append(Location('King Dodongo',
                                             'accessible',
                                             'Bombchus+Strength_Hammer+Strength+Adult_Bombs',
-                                            'Bombs'))
+                                            'Bombs/Bombchus,Bombs/Strength,Slingshot/Bow/Hover Boots/Hookshot-2'))
         self.location_table.append(Location('Song from Saria',
                                             'accessible',
-                                            'Weird Egg,Hyrule Entry',
+                                            'Letter',
                                             '-1'))
         self.location_table.append(Location('Song from Ocarina of Time',
                                             'accessible',
@@ -132,7 +132,7 @@ class Location_List:
                                             '-1'))
         self.location_table.append(Location('Sheik at Colossus',
                                             'accessible',
-                                            'Hookshot,Adult_Requiem',
+                                            'GTG Entry,Adult_Requiem',
                                             'Requiem_Hookshot-2/Epona,Hookshot-2/Hover Boots,Lens'))
         self.location_table.append(Location('Sheik at Temple',
                                             'accessible',
@@ -245,7 +245,7 @@ class Location_List:
         self.location_table.append(Location('Water Temple Dragon Chest',
                                             'accessible',
                                             'Adult,Hookshot+Iron Boots/Hookshot-2+Scale-2,Ocarina,Lullaby/Time+Bow+Water Temple Small Key-2',
-                                            'Adult,Hookshot,Iron Boots,Ocarina,Lullaby+Strength/Water Temple Small Key-6+Time+Lullaby+Bow'))
+                                            'Adult,Hookshot,Iron Boots,Ocarina,Lullaby+Strength/Water Temple Small Key-6+Time+Lullaby/Keysanity+Bow'))
         self.location_table.append(Location('Water Temple Central Bow Target Chest',
                                             'accessible',
                                             'Adult,Hookshot+Iron Boots+Hover Boots/Hookshot-2+Scale-2/Hookshot-2+Iron Boots,Ocarina,Lullaby,Bow,Strength',
@@ -269,11 +269,11 @@ class Location_List:
         self.location_table.append(Location('Water Temple Dark Link Chest',
                                             'accessible',
                                             'Adult,Hookshot,Iron Boots/Scale-2,Water Temple Small Key-2',
-                                            'Adult,Hookshot,Water Temple Small Key-6'))
+                                            'Adult,Hookshot,Water Temple Small Key-6,Ocarina+Lullaby/Keysanity'))
         self.location_table.append(Location('Water Temple River Chest',
                                             'accessible',
                                             'Adult,Hookshot,Iron Boots/Scale-2,Water Temple Small Key-2,Bow,Time,Ocarina',
-                                            'Adult,Hookshot,Iron Boots,Water Temple Small Key-6,Lullaby,Ocarina,Time,Bow'))
+                                            'Adult,Hookshot,Iron Boots,Water Temple Small Key-6,Lullaby+Ocarina/Keysanity,Time,Bow'))
         self.location_table.append(Location('Gerudo Valley Waterfall Freestanding PoH',
                                             'accessible',
                                             'Hyrule Entry',
@@ -409,10 +409,19 @@ class Location_List:
         self.location_table.append(Location('Spirit Temple Child Climb East Chest',
                                             'accessible',
                                             'Adult,Strength-2,Requiem+Ocarina/GTG Entry,Spirit Temple Small Key,Bombs/Bombchus/Hookshot/Bow_Requiem,Ocarina,Spirit Temple Small Key,Slingshot/Boomerang/Bombs/Bombchus',
-                                            'Adult,Requiem+Ocarina/GTG Entry+Hover Boots/Hookshot-2+Lens' EDIT THIS
-        Spirit Temple Child Climb North Chest
-        Spirit Temple Compass Chest
-        Spirit Temple Early Adult Right Chest
+                                            'Adult,GTG Entry+Hover Boots/GTG Entry+Hookshot-2,Lens,Spirit Temple Small key,Strength-2,Bombs/Hookshot+Boomerang/Hookshot+Slingshot/Bow+Boomerang/Bow+Slingshot/Spirit Temple Small Key-3+Strength-2+Hookshot/Spirit Temple Small Key-3+Strength-2+Bow/Spirit Temple Small Key-5+Requiem+Ocarina+Boomerang/Spirit Temple Sall Key-5+Ocarina+Requiem+Slingshot'))
+        self.location_table.append(Location('Spirit Temple Child Climb North Chest',
+                                            'accessible',
+                                            'Adult,Strength-2,Requiem+Ocarina/GTG Entry,Spirit Temple Small Key,Bombs/Bombchus/Hookshot/Bow_Requiem,Ocarina,Spirit Temple Small Key,Slingshot/Boomerang/Bombs/Bombchus',
+                                            'Adult,GTG Entry+Hover Boots/GTG Entry+Hookshot-2,Lens,Spirit Temple Small key,Strength-2,Bombs/Hookshot+Boomerang/Hookshot+Slingshot/Bow+Boomerang/Bow+Slingshot/Spirit Temple Small Key-3+Strength-2+Hookshot/Spirit Temple Small Key-3+Strength-2+Bow/Spirit Temple Small Key-5+Requiem+Ocarina+Boomerang/Spirit Temple Sall Key-5+Ocarina+Requiem+Slingshot'))
+        self.location_table.append(Location('Spirit Temple Compass Chest',
+                                            'accessible',
+                                            'Adult,Strength-2,Ocarina,Lullaby,Hookshot,Requiem+Ocarina/GTG Entry',
+                                            'Adult,Strength-2,Ocarina,Lullaby,Hookshot,Requiem+Ocarina/GTG Entry+Hover Boots/GTG Entry+Hookshot-2,Lens'))
+        self.location_table.append(Location('Spirit Temple Early Adult Right Chest',
+                                            'accessible',
+                                            'Adult,Strength-2,Bow/Hookshot/Bombs/Bombchus',
+                                            'Adult,Strength-2,Bow/Hookshot/Bombs/Bombchus'
         Spirit Temple First Mirror Right Chest
         Spirit Temple First Mirror Left Chest
         Spirit Temple Map Chest

@@ -29,7 +29,7 @@ class State(object):
         self.item_table.append(Item('Bottle', 0,  -1))
         self.item_table.append(Item('Wallet', 0,  -1))
         self.item_table.append(Item('Skulltula', 0,  -1))
-        self.item_table.append(Item('Mirror Shield', False,  -1))
+        self.item_table.append(Item('Mirror', False,  -1))
         self.item_table.append(Item('Goron Tunic', False,  -1))
         self.item_table.append(Item('Zora Tunic', False,  -1))
         self.item_table.append(Item('Iron Boots', False,  -1))
@@ -66,12 +66,18 @@ class State(object):
         self.item_table.append(Item('Weird Egg', False,  -1))
         self.item_table.append(Item('Adult Trade', 0,  -1))
         self.item_table.append(Item('Ocarina', 0,  -1))
-        self.item_table.append(Item('Child Trade', 0,  -1))
+        self.item_table.append(Item('Letter', 0,  -1))
         self.item_table.append(Item('Hearts', 3,  -1))
         self.item_table.append(Item('GTG entry', False,  -1))
         self.item_table.append(Item('Hyrule entry', False,  -1))
         self.item_table.append(Item('Adult', False,  -1))
         self.item_table.append(Item('Triforce', False,  -1))
+        self.item_table.append(Item('Sticks', False, -1))
+        self.item_table.append(Item('Nuts', False, -1))
+        self.item_table.append(Item('Deku', False, -1))
+        self.item_table.append(Item('Keysanity', False, -1))
+        self.item_table.append(Item('Scrubsanity', False, -1))
+        self.item_table.append(Item('Keysy', False, -1,))
 
 
 
