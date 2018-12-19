@@ -3,6 +3,17 @@
 
 class Location(object):
 
+
+    # Class Location :
+    #
+    # Lists all logic that the checks should follow.
+    # Logic is written the way below to make things compact and efficient
+    # Will check all items against what is stored in the current state, and run through the list each "Sphere"
+    # Spheres will raise until all locations are obtainable.
+
+
+
+
     # for ruleset, I will split with ","
 
     #### input = string and delimiter. "Iron Boots, Hookshot", "," -> "Iron Boots" "Hookshot"
@@ -444,15 +455,40 @@ class Location_List:
                                             '-1'))
         self.location_table.append(Location("Goron City Leftmost Maze Chest",
                                             'accessible',
-                                            'Adult,Strength-2/Hammer/Bombs+Hover Boots/Bombchus+Hover Boots'
-"Goron City Right Maze Chest"
-"Goron City Left Maze Chest"
-"Zoras Domain Torch Run"
-"Hookshot Chest"
-"Redead Grotto Chest"
-"Wolfos Grotto Chest"
-"Silver Gauntlets Chest"
-"Mirror Shield Chest"
+                                            'Adult,Strength-2/Hammer/Bombs+Hover Boots/Bombchus+Hover Boots',
+                                            'Adult,Strength-2/Hammer'))
+        self.location_table.append(Location("Goron City Right Maze Chest",
+                                            'accessible',
+                                            'Bombs/Hammer+Adult/Bombchus/Strength-2+Adult',
+                                            '-1'))
+        self.location_table.append(Location("Goron City Left Maze Chest",
+                                            'accessible',
+                                            'Bombs/Adult+Hammer/Bombchus/Strength-2+Adult',
+                                            '-1'))
+        self.location_table.append(Location("Zoras Domain Torch Run",
+                                            'accessible',
+                                            'Scale/Bombs/Bombchus'
+                                            'Bombs+Ocarina+Lullaby/Bombchus+Lullaby+Ocarina/Scale'))
+        self.location_table.append(Location("Hookshot Chest",
+                                            'accessible',
+                                            'Adult',
+                                            '-1'))
+        self.location_table.append(Location("Redead Grotto Chest",
+                                            'accessible',
+                                            'Bombs/Bombchus/Hammer+Adult',
+                                            '-1'))
+        self.location_table.append(Location("Wolfos Grotto Chest",
+                                            'accessible',
+                                            'Bombs/Bombchus/Hammer+Adult',
+                                            'Bombs_Bombchus_Hammer,Ocarina,Saria/Minuet'))
+        self.location_table.append(Location("Silver Gauntlets Chest", # fix
+                                            'accessible',
+                                            'Spirit Temple Small Key-2,Bombs/Bombchus/Adult+Strength-2'
+                                            'Spirit Temple Small Key-5,Bombs/Bombchus_Adult,Spirit Temple Small Key-3,Hookshot-2,Bombs/Bombchus'))
+        self.location_table.append(Location("Mirror Shield Chest", # fix
+                                            'accessible',
+                                            'Adult,Strength-2,Spirit Temple Small Key-3,Bombs/Bombchus',
+                                            'Ocarina+Requiem/Hookshot-2+Lens+GTG Access/Hover Boots+Lens+GTG Access,Adult,Strength-2,Spirit Temple Small Key-4,Bombs/Bombchus'
 "Field West Castle Town Grotto Chest"
 "Remote Southern Grotto Chest"
 "Field Near Lake Outside Fence Grotto Chest"
