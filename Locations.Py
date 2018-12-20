@@ -1,7 +1,7 @@
 
 
 
-class Location(object):
+class Location:
 
 
     # Class Location :
@@ -88,7 +88,7 @@ class Location(object):
 
 
 
-    def __init__(self, name = '', ruleset = '', requirements = '', logic = ''):
+    def __init__(self, name = '', ruleset = '', requirements = [], logic = []):
         self.name = name
         self.ruleset = ruleset
         self.requirements = requirements
@@ -99,11 +99,11 @@ class Location_List:
         self.location_table = []
         self.location_table.append(Location('Links Pocket',
                                             'accessible',
-                                            '',
-                                            ''))
+                                            (),
+                                            ()))
         self.location_table.append(Location('Morpha',
                                             'accessible',
-                                            'Adult,Hookshot-2,Iron Boots,Boss Key Water Temple',
+                                            (lambda state: state.has('Longshot') and state.has('Adult') and state.has('Iron_Boots') and state.has('Boss_Key_Water_Temple')),
                                             '-1'))
         self.location_table.append(Location('Twinrova',
                                             'accessible',
@@ -483,7 +483,7 @@ class Location_List:
                                             'Bombs_Bombchus_Hammer,Ocarina,Saria/Minuet'))
         self.location_table.append(Location("Silver Gauntlets Chest", # fix
                                             'accessible',
-                                            'Spirit Temple Small Key-2,Bombs/Bombchus/Adult+Strength-2'
+                                            'Spirit Temple Small Key-2,Bombs+Ocarina+Requiem/Ocarin+Requiem+Bombchus/Adult+Strength-2+Ocarina+Requiem/Adult+Strength-'
                                             'Spirit Temple Small Key-5,Bombs/Bombchus_Adult,Spirit Temple Small Key-3,Hookshot-2,Bombs/Bombchus'))
         self.location_table.append(Location("Mirror Shield Chest", # fix
                                             'accessible',
